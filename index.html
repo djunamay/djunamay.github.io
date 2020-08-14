@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
-	{% load staticfiles %}
+
 <head>
-    <title>metabomap</title>
-
-
+	<title>MetaboMap</title>
 	<meta charset="utf-8" />
-
+	{% load staticfiles %}
 	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
 	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
 
@@ -18,88 +14,51 @@
 		  height:100%
 		}
 	</style>
-
 </head>
 
+<body class="body" style="background-color:#FFFFFF">
+	<div class="container-fluid" style="min-height:95%; ">
+		<div class="row">
 
+			  <div class="col-sm-12">
+				  <br>
+				  <center>
+				  <h1 style="color:#2E2E2E;font-family:Open Sans;"><b>metabomap</b></h1>
+				  <h4 style="color:#2E2E2E;font-family:Open Sans">generate cluster maps from univariate metabolite data</h4>
+				  </center>
+			  </div>
+		</div><hr>
 
-<body class="body" style="background-color:#FFFFFF" >
-
-	<div class="container-fluid" style="min-height:10%; ">
-
-				  <h1 style="color:#E72B3F;font-family:Open Sans;"><b>omics data visualization</b></h1>
-
-	</div>
-
-
- <div class="sidebar" id="sidebar" >
-     <img  src="{% static 'personal/img/header_image_new.jpg' %}" class="img-responsive"/>
- </div>
-
-		<div class="row" >
+		<div class="row">
 		  <div class="col-sm-12">
+		  <br>
 
+		  <br>
 		   <!-- Great, til you resize. -->
 			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
-
-			<nav class="sidebar" id="primary" style="background-color:#E72B3F" data-spy="affix" data-offset-top="135" >
-			  <ul class="nav nav-pills" >
-				<li role="presentation" ><a href='/'>home</a></li>
-				<li role="presentation"><a href='/figure/'>upload</a></li>
+			<div class="well bs-sidebar" id="sidebar" style="background-color:#2E2E2E">
+			  <ul class="nav nav-pills nav-justified">
+				<li role="presentation" class = "active"><a  href='/'>home</a></li>
+				<li role="presentation"><a href='/upload/'>upload</a></li>
 				<li role="presentation"><a href='/code/'>code</a></li>
 			  </ul>
-
-
-			</nav> <!--well bs-sidebar affix-->
+			</div> <!--well bs-sidebar affix-->
 
 	</div>
-	</div>
+	      <br>
+
+		  <br>
 	        {% block content %} {% endblock %}
 	      <br>
 
 		  <br>
 	<footer>
-<nav class="sidebar" id="sidebar">
-
-      <img src="{% static 'personal/img/header_image_new.jpg' %}" class="img-responsive"/>
-
-
-</nav>
+		<div class="container" style='margin-left:60px'>
+			<p><a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a></p>
+		</div>
 
 	</footer>
 
-
 </body>
-
-<style>
-
-
-  	.nav-pills a{
-		color:white;
-		font-family:'Open Sans';
-		font-size: 13px;
-		font-weight: 600;
-								}
-	.nav>li>a:focus, .nav>li>a:hover{
-    	background-color: #B40431;
-
-													}
-</style>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  .affix {
-      top: 0;
-      width: 100%;
-
-  }
-
-  .affix + .container-fluid {
-      padding-top: 70px;
-  }
-
-  </style>
-
 
 </html>
