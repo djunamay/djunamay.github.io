@@ -1,7 +1,105 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+
+<html lang="en">
+	{% load staticfiles %}
+<head>
+    <title>metabomap</title>
+
+
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+
+	<style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+	</style>
+
+</head>
+
+
+
+<body class="body" style="background-color:#FFFFFF" >
+
+	<div class="container-fluid" style="min-height:10%; ">
+
+				  <h1 style="color:#E72B3F;font-family:Open Sans;"><b>omics data visualization</b></h1>
+
+	</div>
+
+
+ <div class="sidebar" id="sidebar" >
+     <img  src="{% static 'personal/img/header_image_new.jpg' %}" class="img-responsive"/>
+ </div>
+
+		<div class="row" >
+		  <div class="col-sm-12">
+
+		   <!-- Great, til you resize. -->
+			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
+
+			<nav class="sidebar" id="primary" style="background-color:#E72B3F" data-spy="affix" data-offset-top="135" >
+			  <ul class="nav nav-pills" >
+				<li role="presentation" ><a href='/'>home</a></li>
+				<li role="presentation"><a href='/figure/'>upload</a></li>
+				<li role="presentation"><a href='/code/'>code</a></li>
+			  </ul>
+
+
+			</nav> <!--well bs-sidebar affix-->
+
+	</div>
+	</div>
+	        {% block content %} {% endblock %}
+	      <br>
+
+		  <br>
+	<footer>
+<nav class="sidebar" id="sidebar">
+
+      <img src="{% static 'personal/img/header_image_new.jpg' %}" class="img-responsive"/>
+
+
+</nav>
+
+	</footer>
+
+
 </body>
+
+<style>
+
+
+  	.nav-pills a{
+		color:white;
+		font-family:'Open Sans';
+		font-size: 13px;
+		font-weight: 600;
+								}
+	.nav>li>a:focus, .nav>li>a:hover{
+    	background-color: #B40431;
+
+													}
+</style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .affix {
+      top: 0;
+      width: 100%;
+
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+  </style>
+
+
 </html>
