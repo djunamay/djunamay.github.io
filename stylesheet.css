@@ -1,0 +1,74 @@
+body {
+  background-color: white;
+  padding: 70px;
+}
+h1 {
+  color: black;
+  font-family: "Open Sans",  normal, sans-serif;
+  font-size: 30px;
+  line-height: 5pt;
+}
+h2 {
+  color: darkgrey;
+  font-family: "Open Sans",  normal, sans-serif;
+  font-size: 10px;
+  line-height: 3pt;
+}
+.p1{
+  color: #ff6666;
+  font-family: "Open Sans",  bol, sans-serif;
+  font-size: 25px;
+  line-height: 30pt;
+}
+p {
+  color: darkgrey;
+  font-family: "Open Sans",  normal, sans-serif;
+  font-size: 25px;
+  line-height: 20pt;
+}
+.title {
+ height:200px;
+}
+
+.underline-on-hover:hover {
+    text-decoration: underline;
+    color:red;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 3px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    bottom: -100px;
+    text-underline-position: under;
+}
+#content {
+  display: none;
+}
+input[type="text"]{
+    cursor: pointer;
+    outline:none;
+    color: darkgrey;
+    font-family: "Open Sans",  normal, sans-serif;
+    font-size: 25px;
+    line-height: 50pt;
+    focus:0 -2px 0 #2196F3;
+    padding: 0;
+    border: none;
+    background: none;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+input:focus + div#content {
+  display: block;
+  position: absolute;
+  left: 700px;
+  bottom: 600px;
+  color: darkgrey;
+  font-family: "Open Sans",  normal, sans-serif;
+  font-size: 25px;
+  line-height: 20pt;
+  outline: none;
+}
+.no-outline:focus {
+
+}
