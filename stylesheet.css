@@ -1,41 +1,127 @@
-p {
-  margin: 35px;
+p,a {
+  margin: 0px;
+  color:black;
+  font-family: "Courier New",  normal, sans-serif;
+
+}
+
+p, h1, h2, h3{
+  padding: 20px 40px;
+
+}
+
+p:not(:first-child){
+  /*text-decoration: underline;*/
 }
 body {
   background-color: white;
-  padding-top: 100px;
-  padding-left: 300px;
-  padding-right: 100px;
+  padding-top: 0;
+  padding-left: 20;
+  padding-right: 20;
 }
 h1 {
-  color: black;
-  font-family: "Open Sans",  normal, sans-serif;
-  font-size: 25px;
-  line-height: 5pt;
-    margin: 35px;
+  color: white;
+  font-family: "Courier New",  normal, sans-serif;
+  font-size: 22px;
+  line-height: 5;
+  margin: 0px;
+  padding: 20px 40px;
+
 }
+
 h2 {
-  color: darkgrey;
-  font-family: "Open Sans",  normal, sans-serif;
-  font-size: 10px;
-  line-height: 3pt;
-    margin: 35px;
+  color: black;
+  font-family: "Courier New",  bold, sans-serif;
+  font-size: 18px;
+  margin: 0px;
+
 }
+
+h3 {
+  color: black;
+  font-family: "Courier New",  bold, sans-serif;
+  font-size: 15px;
+  line-height: 5;
+  margin: 0px;
+  text-decoration: underline;
+}
+
+.subtitle {
+  color: black;
+  font-family: "Courier New",  bold, sans-serif;
+  font-size: 15px;
+  margin: 0px;
+  text-decoration: underline;
+}
+h4 {
+  color: white;
+  font-family: "Courier New", sans-serif;
+  font-size: 15px;
+  line-height: 5;
+  margin: 0px;
+  text-indent: 40px;
+}
+
 .p1{
-  color: #ff6666;
-  font-family: "Open Sans",  bol, sans-serif;
-  font-size: 20px;
-  line-height: 30pt;
+  color: white;
+  font-family: "Courier New",  bol, sans-serif;
+  font-size: 16px;
+  line-height: 20pt;
 }
-p {
-  color: darkgrey;
-  font-family: "Open Sans",  normal, sans-serif;
-  font-size: 20px;
-  line-height: 30pt;
-    margin: 35px;
+
+.p2{
+  color: white;
+  font-family: "Courier New",  bol, sans-serif;
+  font-size: 16px;
+  line-height: 20pt;
+  text-decoration: underline;
+
 }
+
 .title {
  height:200px;
+}
+.header {
+  background-color: black;
+  position: relative;
+
+}
+.header img {
+  position: absolute;
+  right: 40px;
+  top: 34.5px;
+}
+
+.body-sec {
+  background-color: white;
+  position: relative;
+  /*min-height:100vh*/
+
+}
+
+.body-sec2 {
+  background-color: #FF33FF	;
+  position: relative;
+  /*min-height:100vh*/
+
+}
+.body-sec img {
+  width: 50%;
+  margin-left:40px
+}
+.body-sec3 img {
+  width: 35%;
+  margin-left:40px
+}
+.body-sec3 {
+  background-color: black	;
+  position: relative;
+  /*min-height:100vh*/
+}
+
+.body-sec3 a{
+  color:white;
+  /*min-height:100vh*/
 }
 
 .underline-on-hover:hover {
@@ -81,4 +167,15 @@ input:focus + div#content {
 }
 .no-outline:focus {
 
+}
+.alignleft {
+	float: left;
+}
+
+.alignleft p{
+	color: white;
+}
+
+.alignright {
+	float: right;
 }
