@@ -16,7 +16,6 @@ p, h1, h2, h3, h4,img{
 margin:0;
 position: relative;
 line-height: 2;
-max-width: 1200px;
 
 }
 
@@ -28,6 +27,7 @@ p:not(:first-child){
 body {
   background-color: white;
   padding-top: 0;
+  max-width: 2000px;
 
 }
 h1 {
