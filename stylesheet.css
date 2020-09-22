@@ -15,6 +15,7 @@ p, h1, h2, h3, h4, img {
   margin: 0;
   position: relative;
   line-height: 2;
+
 }
 
 
@@ -100,7 +101,7 @@ h4 {
 
 #fieldID3 img {
   display: block;
-  width: auto;
+  width: 50%;
   height: auto;
 }
 
