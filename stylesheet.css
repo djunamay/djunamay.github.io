@@ -17,7 +17,6 @@ margin:0;
 position: relative;
 line-height: 2;
 max-width: 1200px;
-min-width: 300px;
 
 }
 
@@ -99,7 +98,8 @@ h4 {
 .header img {
   position: absolute;
   right: 30px;
-  top: 20px;
+  top: 15px;
+
 }
 
 .body-sec {
