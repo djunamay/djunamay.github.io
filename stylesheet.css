@@ -230,10 +230,37 @@ input:focus + div#content {
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 10px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 0px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
 }
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+}
+
+html.color-scheme-1 {
+    background-color: red;
+    color: #000000;
+}
+
+html.color-scheme-1 a {
+    color: #000000;
+}
+
+html.color-scheme-2 {
+    background-color: blue;
+    color: #000000;
+}
+
+html.color-scheme-2 h4 {
+    color: green;
+}
+
+html.color-scheme-3 {
+    background-color: green;
+    color: #000000;
+}
+
+html.color-scheme-3 a {
+    color: green;
 }
