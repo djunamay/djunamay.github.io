@@ -7,6 +7,10 @@ p, h3 {
 
 }
 
+p{
+  text-align: justify;
+ text-justify: inter-word;
+}
 p, h1, h2, h3, h4,img{
   padding: 1% 20%;
 margin:0;
@@ -36,7 +40,7 @@ h1 {
 
 h2 {
   color: black;
-  font-family: "Courier New",  bold, sans-serif;
+  font-family: "Open Sans",  bold, sans-serif;
   font-size: 18px;
   margin: 0px;
 
@@ -45,7 +49,7 @@ h2 {
 
 h3 {
   color: black;
-  font-family: "Courier New",  bold, sans-serif;
+  font-family: "Open Sans",  bold, sans-serif;
   font-size: 20px;
   line-height: 2;
   margin: 0px;
@@ -53,14 +57,14 @@ h3 {
 
 .subtitle {
   color: black;
-  font-family: "Courier New",  bold, sans-serif;
+  font-family: "Open Sans",  bold, sans-serif;
   font-size: 15px;
   margin: 0px;
   text-decoration: underline;
 }
 h4 {
   color: white;
-  font-family: "Courier New", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   line-height: 0.5;
   margin: 0px;
@@ -68,14 +72,14 @@ h4 {
 
 .p1{
   color: white;
-  font-family: "Courier New",  bol, sans-serif;
+  font-family: "Open Sans",  bol, sans-serif;
   font-size: 16px;
   line-height: 20pt;
 }
 
 .p2{
   color: white;
-  font-family: "Courier New",  bol, sans-serif;
+  font-family: "Open Sans",  bol, sans-serif;
   font-size: 16px;
   line-height: 20pt;
   text-decoration: underline;
