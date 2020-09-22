@@ -14,9 +14,9 @@
 	</div>
 
 	<div id="fieldID">
-		<h3>PhD student in the Tsai and Kellis labs, interested in using genomics and computational tools to unravel Alzheimer's disease heterogeneity and polygenic risk on the single-cell level.</h3>
+		<h3>PhD student in the Tsai and Kellis labs, interested in using genomics and computational tools to unravel Alzheimer's disease heterogeneity and polygenic risk at the single-cell level.</h3>
 		<h3><a href="#current"> Questions I am currently thinking about... </a></h3>
-		<h3><a href="#current"> Guiding Interests </a></h3>
+		<h3><a href="#interests"> Guiding Interests </a></h3>
 
 		<h3><a href="#labs"> At These Labs </a></h3>
 		<h3><a href="#previous"> Previous Work </a></h3>
@@ -41,14 +41,14 @@
 			toxic protein products, and an insufficient protective cellular response, with the ultimate consequence of neuronal death and brain atrophy. Given the diversity of genetic and environmental risk factors, an interesting and obvious question is -
 			At what point do these factors converge? By shifting cell states of particular cell types? By activating certain genes? Or do they meet all the way downstream - and converge on neuronal death? </p>
 		<h3>2. How do multiple AD genetic risk variants interact to increase risk in AD?</h3>
-		<p>Current studies that dissect genetic mechanisms of Alzheimer's disease have focused largely on the isolated effect of individual genetic risk variants, when controling for multiple covariates. Now that genome wide association studies have
+		<p>Current studies that dissect genetic mechanisms of AD have focused largely on the isolated effect of individual genetic risk variants, when controling for multiple covariates. Now that genome wide association studies have
 			implicated ~ 29 genes in increasing disease risk, an interesting consideration is - What happens when multiple variants converge in a single individual? How does this modify risk, i.e. How do multiple genetic risk variants alter cell states
 			that promote or protect against AD pathology, neuroinflammation, and neurodegeneration? This is an important question, as beginning to answer it will elucidate novel mechanisms of disease pathogenesis, which might explain the observed
-			transcriptomic and clinical disease heterogeneity observed in this disease.</p>
+			transcriptomic and clinical disease heterogeneity  in this disease.</p>
 		<h3>3. How can we classify individuals and generate a hierarchy of AD molecular subtypes to dissect AD heterogeneity? </h3>
 		<p> AD is a heterogenous disease, on the molecular and the clinical level. I strongly believe that we should redefine our understanding of AD, not as a single disease, but as a large group of distinct molecular processes initiated by diverse
 			upstream risk factors that converge to the common phenotypes of amyloid deposition, tangle formation, and dementia. I am interested in using high-dimensional molecular signatures to identify functional subtypes of AD and systematically
-			characterize heterogeneity of the disease. A systematic and quantitative classification of AD subtypes, akin to the classifications that inform therapeutic targets in cancer, will aid therapeutic intervention, biomarker identification of
+			characterize heterogeneity of the disease. A systematic and quantitative classification of AD subtypes, akin to the classifications that inform therapeutic targets in cancer, should aid therapeutic intervention, biomarker identification of
 			increased sensitivity, as well as systematic stratification of cohorts in scientific studies. </p>
 		<h3>4. How can we infer spatial localization from single-cell RNA-seq data? </h3>
 		<p> This is another question I am very interested in. One limitation with single-cell RNA-sequencing technology is that it removes cells from their native environment, and therefore loses the spatial component of variation that defines tissue
@@ -57,7 +57,7 @@
 			interested in developing probabilistic methods to infer spatial information from single-cell data alone.</p>
 		<h3>These are the questions I am currently trying to tackle during my PhD. </h3>
 
-		<div class="body-sec3">
+		<div id="interests" class="body-sec3">
 			<h4>Guiding interests... </h4>
 
 		</div>
@@ -75,7 +75,7 @@
 			<h3> 3. Protein structure and function: </h3>
 			<p>This is slighly out of the scope of the previous interests - But protein structure and function has always fascinated me. It's an important consideration for Alzheimer's disease too - previous research suggests that genes that are toxic upon
 				overexpression (i.e. dosage sensitive) tend to have more intrinsically disordered regions - they might enter into promiscuous interactions in the cell and are more likley to be hubs that interact with (and thus dysregulate) multiple proteins
-				upon overexpression <a href=https://www.cell.com/cell/pdf/S0092-8674(09)00454-1.pdf>(click here for reference)</a>. I find this biochemical view on Alzheimer's disease very compelling.</p>
+				upon overexpression <a href=https://www.cell.com/cell/pdf/S0092-8674(09)00454-1.pdf>(click here for reference)</a>.</p>
 				<!img src="./prot.png">
 
 		</div>
@@ -126,15 +126,15 @@
 					decreasing favorable interactions with the initial cleavage site of either cleavage pathway
 					(B). Based on these findings, we introduced select
 					mutations into the APP TMD and showed that these mutations did indeed modulate Aβ-42/40 ratios in cell lines transfected with
-					these constructs. This provides a model to enable study of the Abeta isoforms, as well as drug screening to modulate their ratios. This work was published as part of a study in Nature Communications, 2020. <a
+					these constructs. This provides a model to enable study of the Aß isoforms, as well as drug screening to modulate their ratios. This work was published as part of a study in Nature Communications, 2020. <a
 						href="https://www.nature.com/articles/s41467-020-15120-3"> View the paper</a></p>
 				<img src="./f1.svg">
 
 				<h3>2. Analysis of transcriptomic signature of individual Aβ isoforms: </h3>
 
-				<p> To identify gene changes associated with Aβ toxicity, I characterized the transcriptomic response of differentiated 3D-cultured AD human neurons to Aβ accumulation. Clonal AD cell lines were differentiated within an artificial
+				<p> To identify gene changes associated with Aβ toxicity, I characterized the transcriptomic response of differentiated 3D-cultured AD human neurons (the cell lines I discuss in the previous point) to Aβ accumulation. Clonal AD cell lines were differentiated within an artificial
 					extracellular matrix in 3D, which is accompanied by a robust generation of AD pathologies including amyloid plaques and tau tangles. Transcriptomic datasets were generated and integrated with transcriptomes from human temporal cortex and
-					cerebellum to identify pathology-associated pathway alterations that are present in human brains. </p>
+					cerebellum to identify pathology-associated pathway alterations that are present in human brains. Panels A-B give a cartoon overview of this study. </p>
 				<img src="./flow.png">
 
 					<h3>3. Identifying mechanisms and biomarkers of spontaneous preterm birth</h3>
@@ -182,17 +182,8 @@
 						confounders, including cellular heterogeneity and batch effects. For this reason, differential expression results
 						have not yet been provided as part of official GTEx data releases.
 						DESeq2 and Limma+Voom make different statistical assumptions about the distribution of gene expression data
-						and, as a result, show vastly different results. To identify biases associated with these packages, I worked with
-						randomized GTEx data to empirically test their false discovery rate (FDR). I found the FDR to be consistently higher
-						when running DESeq2 as compared to Limma+Voom on data with permuted labels. I also worked with nonrandomized
-						GTEx data to characterize the sets of differentially expressed genes called by each package and found
-						that both packages call a core set of differentially expressed genes from non-permuted data. This core set of genes
-						was consistent across bootstraps and for different sample sizes. While Limma+Voom did not generally make any
-						additional calls, DESeq2 consistently called a unique set of genes in addition to the core set. The unique gene sets
-						were characterized by lower log-fold changes and higher dispersion estimates and varied for each bootstrapping
-						event. These results suggest that DESeq2 is more susceptible to GTEx data sample heterogeneity than
-						Limma+Voom, even when controlling for confounders. These results were intended to inform how differential gene expression analysis will be incorporated into the GTEx analysis
-						pipeline. </p>
+						and, as a result, show vastly different results. I worked with
+						randomized GTEx data to empirically test  biases associated with these packages.</p>
 
 					<div id="writing" class="body-sec3">
 						<h4>Writing</h4>
@@ -292,7 +283,7 @@
 							<div class="body-sec">
 
 
-								<h3>I really enjoy teaching and mentoring - In my opinnion it's the best way to learn and extremely gratifying to witness someone else understand a new concept. </h3>
+								<h3>I really enjoy teaching and mentoring - It's the best way to learn and so gratifying to witness someone else understand a new concept! </h3>
 								<p>1. I am currently TAing the graduate class "Quantitative Methods and Computational Models in Neuroscience Teaching", taught by Professor Mehrdad Jazayeri. We cover linear systems and operations, dimensionality reduction (e.g.,
 									PCA), Bayesian approaches, descriptive and generative models, classification and clustering, and dynamical systems. As a whole, the class provides theoretical and practical skills to analyze and model neurobiological data collected
 									at multiple levels in neuroscience: molecular, systems and cognitive levels. </p>
@@ -307,8 +298,7 @@
 							<div id="fieldID5">
 								<h3>The MIT cycling team has become my family away from home.</h3>
 								<p>I started cycling competitively a year before joining MIT, but have become fully devoted to the sport after meeting the awesome people in this team. Have a look at my blog post for the team recounting our fall training camp 2019
-									experience. <a href="https://cycling.mit.edu/blog/2019/11/11/fall-training-camp-2019/"> View the blog.</a> If you are considering cycling as a sport (which I HIGHLY recommend, as it is such a fantastic outlet if work is stressful),
-									have a look at some of these links to get you in the mood:</p>
+									experience. <a href="https://cycling.mit.edu/blog/2019/11/11/fall-training-camp-2019/"> View the blog.</a> </p>
 							</div>
 
 
