@@ -25,7 +25,6 @@ p:not(:first-child){
   /*text-decoration: underline;*/
 }
 body {
-  background-color: white;
   padding-top: 0;
   max-width: 2000px;
 
@@ -235,11 +234,11 @@ input:focus + div#content {
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #FF33FF	; /* Add a dark-grey background on hover */
 }
 
 html.color-scheme-1 {
-    background-color: red;
+    font-color: green;
     color: #000000;
 }
 
@@ -248,19 +247,19 @@ html.color-scheme-1 a {
 }
 
 html.color-scheme-2 {
-    background-color: blue;
+    background-color: #000000;
     color: #000000;
 }
 
-html.color-scheme-2 h4 {
-    color: green;
+html.color-scheme-2 a {
+    color: #000000;
 }
 
 html.color-scheme-3 {
-    background-color: green;
+    background-color: #000000;
     color: #000000;
 }
 
 html.color-scheme-3 a {
-    color: green;
+    color: #000000;
 }

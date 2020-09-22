@@ -291,8 +291,22 @@ $( document ).ready(function() {
 });
 
 
-</script>
+var colors = ["#551066", '#7b4289', '#a09d24', '#3f3e19', '#3a6b39', '#98c197', '#ab97c1']
+Frontend.GlobalEvents.on("newpageshown", function(){
+		var ix = getRandomInt(0, colors.length);
+		var color = colors[ix];
+		jQuery('body').css('background-color', color);
+});
 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+// Returns a random integer between min (included) and max (excluded)
+// Using Math.round() will give you a non-uniform distribution!
+function getRandomInt(min, max) {
+		min = Math.ceil(min);
+		max = Math.floor(max);
+		return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
 
 	</body
 </html>
