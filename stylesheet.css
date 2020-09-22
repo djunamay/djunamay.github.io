@@ -27,7 +27,6 @@ p:not(:first-child){
 body {
   padding-top: 0;
   max-width: 2000px;
-
 }
 h1 {
   color: white;
@@ -237,29 +236,19 @@ input:focus + div#content {
   background-color: #FF33FF	; /* Add a dark-grey background on hover */
 }
 
-html.color-scheme-1 {
-    font-color: green;
-    color: #000000;
+.theme_1{
+    background: red;
+}
+.theme_2{
+    background-color:: red;
+}
+.theme_3{
+    background-color:: red;
+}
+.theme_4{
+    background-color:: red;
 }
 
-html.color-scheme-1 a {
-    color: #000000;
-}
+#color{
 
-html.color-scheme-2 {
-    background-color: #000000;
-    color: #000000;
-}
-
-html.color-scheme-2 a {
-    color: #000000;
-}
-
-html.color-scheme-3 {
-    background-color: #000000;
-    color: #000000;
-}
-
-html.color-scheme-3 a {
-    color: #000000;
 }

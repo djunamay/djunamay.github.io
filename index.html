@@ -5,14 +5,14 @@
 		<script src="functions.js"></script>
 
 	</head>
-	<body>
+	<body class = "box">
 
 		<div id="top" class="header">
 		<h1>Djuna von Maydell</h1>
 		<img src="./MIT-logo-ltgray-white-72x38.svg" >
 		</div>
 
-		<div  class="body-sec2">
+		<div id = "fieldID" >
 		<h3>PhD student in the Tsai and Kellis labs, interested in using genomics and computational tools to unravel Alzheimer's disease heterogeneity and polygenic risk on the single-cell level.</h3>
 		<h3><a href="#current"> Questions I am currently thinking about... </a></h3>
 		<h3><a href="#current"> Guiding Interests </a></h3>
@@ -45,11 +45,12 @@
 		<p > This is another question I am very interested in. One limitation with single-cell RNA-sequencing technology is that it removes cells from their native environment, and therefore loses the spatial component of variation that defines tissue architecture. Multiple studies have shown that low-throughput spatial transcriptomic data can be integrated with single-cell RNA-sequencing data to infer a pairwise distance matrix from the single-cell RNA-sequencing dataset - thus restoring the spatial component that was lost by single-cell transcriptomics. However, a major drawback here is that these methods require scientists to generate paired spatial and single-cell data, which is not always experimentally feasible. I am interested in developing probabilistic methods to infer spatial information from single-cell data alone.</p>
 		<h3>These are the questions I am currently trying to tackle during my PhD. </h3>
 
-		<div id="current" class="body-sec3">
+		<div class="body-sec3">
 		<h4 >Guiding interests... </h4>
 
 			</div>
-			<div id="current" class="body-sec">
+
+		<div  id="fieldID2" >
 
 
 		<h3 > 1. Genetics and epigenetics: </h3>
@@ -63,7 +64,7 @@
 
 		<div id="labs" class="body-sec3">
 		<h4 >At These Labs</h4>
-		<div  class="body-sec2">
+		<div  class="body-sec">
 
 
 	<h3>I am part of the Tsai lab (advised by Li-Huei Tsai) in the Brain and Cognitive Sciences Department and the Kellis lab (advised by Manolis Kellis) in the Computer Science department.</h3>
@@ -78,7 +79,8 @@
 
 		<div id="previous" class="body-sec3">
 		<h4>Previous Work</h4>
-		<div  class="body-sec">
+	</div>
+		<div id="fieldID3">
 
 
 		<h3>1. Dissecting the Role of Individual Aβ Species on AD Pathogenesis in 3D Cultured Human Neurons </h3>
@@ -155,7 +157,7 @@
 
 		<div id="writing" class="body-sec3">
 		<h4>Writing</h4>
-		<div class="body-sec2">
+		<div class=body-sec>
 
 		<h3>I enjoy writing and communicating science...</h3>
 
@@ -170,7 +172,7 @@
 		<div id="cv" class="body-sec3">
 		<h4>Read My CV</h4>
 	</div>
-	<div class="body-sec">
+	<div id = "fieldID4">
 
 		<a   href="./Djuna_CV.pdf" download>  <p>download my CV</p> </a>
 		<h3>1. PREVIOUS EDUCATION</h3>
@@ -232,7 +234,7 @@
 		<div id="teaching" class="body-sec3">
 		<h4 >Teaching</h4
 		</div>
-		<div class="body-sec2">
+		<div class="body-sec">
 
 
 		<h3>I really enjoy teaching and mentoring - In my opinnion it's the best way to learn and extremely gratifying to witness someone else understand a new concept. </h3>
@@ -245,7 +247,7 @@
 		<h4>MIT Cycling Team</h4>
 	</div>
 
-		<div class="body-sec">
+		<div id = "fieldID5">
 		<h3>The MIT cycling team has become my family away from home.</h3>
 		 	<p >I started cycling competitively a year before joining MIT, but have become fully devoted to the sport after meeting the awesome people in this team. Have a look at my blog post for the team recounting our fall training camp 2019 experience. <a href="https://cycling.mit.edu/blog/2019/11/11/fall-training-camp-2019/"> View the blog.</a>	If you are considering cycling as a sport (which I HIGHLY recommend, as it is such a fantastic outlet if work is stressful), have a look at some of these links to get you in the mood:</p>
 		</div>
@@ -256,7 +258,7 @@
 				<h4 class="alignleft">Contact Me</h4>
 
 			</div>
-				<div class="body-sec2">
+				<div class="body-sec">
 
 				<h3>Reach out if you have questions about my work or would like to discuss an idea for a project!</h3>
 				<h3>djuna@mit.edu</h3>
@@ -284,28 +286,36 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-$( document ).ready(function() {
-    var listOfClasses = ["color-scheme-1","color-scheme-2","color-scheme-3"];
-    var randomNum = Math.floor(Math.random() * listOfClasses.length);
-    $("html").addClass(listOfClasses[randomNum]);
-});
+
+</script>
 
 
-var colors = ["#551066", '#7b4289', '#a09d24', '#3f3e19', '#3a6b39', '#98c197', '#ab97c1']
-Frontend.GlobalEvents.on("newpageshown", function(){
-		var ix = getRandomInt(0, colors.length);
-		var color = colors[ix];
-		jQuery('body').css('background-color', color);
-});
+<script>
 
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-// Returns a random integer between min (included) and max (excluded)
-// Using Math.round() will give you a non-uniform distribution!
-function getRandomInt(min, max) {
-		min = Math.ceil(min);
-		max = Math.floor(max);
-		return Math.floor(Math.random() * (max - min)) + min;
+
+const numberOfReloads = window.location.hash.substr(1) | 0;
+window.location.hash = numberOfReloads + 1;
+
+Array.prototype.sample = function(){
+  return this[Math.floor(Math.random()*this.length)];
 }
+	var col =  ['#DDA0DD', '#DB7093',' #ee696e',
+'#dc9589',
+'#fac7c3',
+'#78a020',
+'#7ef17c'].sample()
+	var element = document.getElementById('fieldID');
+		element.style.background =col;
+	var element = document.getElementById('fieldID2');
+	element.style.background = col;
+	var element = document.getElementById('fieldID3');
+	element.style.background = col;
+	var element = document.getElementById('fieldID4');
+	element.style.background = col;
+	var element = document.getElementById('fieldID5');
+	element.style.background = col;
+
+
 </script>
 
 	</body
