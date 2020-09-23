@@ -10,15 +10,14 @@ p {
   text-justify: inter-word;
 }
 
-p, h1, h2, h3, h4{
+p, h1, h2, h3, h4 {
   position: relative;
   line-height: 2;
-
 }
 
 body {
   padding: 0;
-
+  margin: 0;
 }
 
 h1 {
@@ -40,8 +39,6 @@ h3 {
   font-size: 18px;
   line-height: 2;
 }
-
-
 
 .subtitle {
   color: black;
@@ -97,17 +94,14 @@ h5 {
 .body-sec {
   background-color: white;
   position: relative;
-
 }
 
 .body-sec3 a {
   color: white;
-
 }
 
 .body-sec2 a {
   color: black;
-
 }
 
 .body-sec a {
@@ -159,16 +153,12 @@ h5 {
 .no-outline:focus {}
 
 .indent {
-
   padding-top: 1px;
   padding-bottom: 1px;
   padding-right: 10px;
   padding-left: 10px;
-
-  margin:  auto;
-  max-width:1000px;
-
-
+  margin: auto;
+  max-width: 1000px;
 }
 
 input[type="text"] {
@@ -227,7 +217,6 @@ input:focus+div#content {
   /* Add a mouse pointer on hover */
   padding-top: 20px;
   padding-bottom: 20px;
-
   /* Some padding */
   border-radius: 10px;
   /* Rounded corners */
