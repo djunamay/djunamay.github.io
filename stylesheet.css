@@ -15,11 +15,12 @@ p, h1, h2, h3, h4, img {
   position: relative;
   line-height: 2;
   margin: 0px 400px;
+  max-width: 2000px;
 }
 
 body {
   padding-top: 0;
-  max-width: 2000px;
+
 }
 
 h1 {
