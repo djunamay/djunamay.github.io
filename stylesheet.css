@@ -10,12 +10,11 @@ p {
   text-justify: inter-word;
 }
 
-p, h1, h2, h3, h4, img {
+p, h1, h2, h3, h4{
   padding: 10px;
   position: relative;
   line-height: 2;
-  margin: 0px 400px;
-  max-width: 2000px;
+
 }
 
 body {
@@ -161,8 +160,11 @@ h5 {
 .no-outline:focus {}
 
 .indent {
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+  width:100%;
+  margin: auto;
+  max-wdith:1000px;
+
 }
 
 input[type="text"] {
