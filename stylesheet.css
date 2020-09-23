@@ -160,10 +160,11 @@ h5 {
 
 .indent {
 
-  width:100%;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-right: 10px;
+  padding-left: 10px;
+
   margin:  auto;
   max-width:1000px;
 
