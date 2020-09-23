@@ -11,14 +11,13 @@ p {
 }
 
 p, h1, h2, h3, h4{
-  padding: 10px;
   position: relative;
   line-height: 2;
 
 }
 
 body {
-  padding-top: 0;
+  padding: 0;
 
 }
 
@@ -42,10 +41,7 @@ h3 {
   line-height: 2;
 }
 
-h4 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+
 
 .subtitle {
   color: black;
@@ -95,20 +91,23 @@ h5 {
 .header img {
   position: absolute;
   right: 30px;
-  top: 15px;
+  top: 35px;
 }
 
 .body-sec {
   background-color: white;
   position: relative;
+
 }
 
 .body-sec3 a {
   color: white;
+
 }
 
 .body-sec2 a {
   color: black;
+
 }
 
 .body-sec a {
@@ -141,7 +140,7 @@ h5 {
 
 #fieldID3 img {
   display: block;
-  width: 1050px;
+  width: auto;
   height: auto;
 }
 
@@ -162,8 +161,12 @@ h5 {
 .indent {
 
   width:100%;
-  margin: auto;
-  max-wdith:1000px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 10px;
+  margin:  auto;
+  max-width:1000px;
+
 
 }
 
@@ -221,9 +224,11 @@ input:focus+div#content {
   /* Text color */
   cursor: pointer;
   /* Add a mouse pointer on hover */
-  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   /* Some padding */
-  border-radius: 0px;
+  border-radius: 10px;
   /* Rounded corners */
   font-size: 18px;
   /* Increase font size */
