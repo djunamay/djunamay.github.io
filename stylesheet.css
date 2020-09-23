@@ -11,13 +11,11 @@ p {
 }
 
 p, h1, h2, h3, h4, img {
-  padding: 1% 20%;
-  margin: 0;
+  padding: 10px;
   position: relative;
   line-height: 2;
-
+  margin: 0px 400px;
 }
-
 
 body {
   padding-top: 0;
@@ -29,14 +27,12 @@ h1 {
   font-family: "Open Sans", normal, sans-serif;
   font-size: 30px;
   line-height: 2;
-  margin: 0px;
 }
 
 h2 {
   color: black;
   font-family: "Open Sans", bold, sans-serif;
   font-size: 18px;
-  margin: 0px;
 }
 
 h3 {
@@ -44,7 +40,11 @@ h3 {
   font-family: "Open Sans", bold, sans-serif;
   font-size: 18px;
   line-height: 2;
-  margin: 0px;
+}
+
+h4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .subtitle {
@@ -60,7 +60,12 @@ h4 {
   font-family: "Open Sans", sans-serif;
   font-size: 23px;
   line-height: 1;
-  margin: 0px;
+}
+
+h5 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 23px;
 }
 
 .p1 {
@@ -96,31 +101,6 @@ h4 {
 .body-sec {
   background-color: white;
   position: relative;
-  /*min-height:100vh*/
-}
-
-#fieldID3 img {
-  display: block;
-  width: 60%;
-  height: auto;
-}
-
-.body-sec2 img {
-  display: block;
-  width: auto;
-  height: auto;
-}
-
-#fieldID2 img{
-  display: block;
-  width: auto;
-  height: auto;
-}
-
-.body-sec3 img {
-  display: block;
-  width: auto;
-  height: auto;
 }
 
 .body-sec3 a {
@@ -138,6 +118,7 @@ h4 {
 .body-sec2 {
   background-color: #FF33FF;
   position: relative;
+  margin-top: 200px;
   /*min-height:100vh*/
 }
 
@@ -158,8 +139,29 @@ h4 {
   text-underline-position: under;
 }
 
-#content {
-  display: none;
+#fieldID3 img {
+  display: block;
+  width: 1050px;
+  height: auto;
+}
+
+.body-sec2 img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.body-sec3 img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.no-outline:focus {}
+
+.indent {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 input[type="text"] {
@@ -193,21 +195,6 @@ input:focus+div#content {
   margin: 35px;
 }
 
-.no-outline:focus {}
-
-.alignleft {
-  float: left;
-}
-
-.alignleft p {
-  color: white;
-}
-
-.alignright {
-  float: right;
-  color: white;
-}
-
 #myBtn {
   display: none;
   /* Hidden by default */
@@ -215,7 +202,7 @@ input:focus+div#content {
   /* Fixed/sticky position */
   bottom: 20px;
   /* Place the button at the bottom of the page */
-  right: 300px;
+  right: 30px;
   /* Place the button 30px from the right */
   top: 20px;
   bottom: 920px;
@@ -244,20 +231,12 @@ input:focus+div#content {
   /* Add a dark-grey background on hover */
 }
 
-.theme_1 {
-  background: red;
+#content {
+  display: none;
 }
 
-.theme_2 {
-  background-color: : red;
+#fieldID2 img {
+  display: block;
+  width: auto;
+  height: auto;
 }
-
-.theme_3 {
-  background-color: : red;
-}
-
-.theme_4 {
-  background-color: : red;
-}
-
-#color {}
