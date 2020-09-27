@@ -132,10 +132,11 @@ h5 {
   text-underline-position: under;
 }
 
-#fieldID3 img {
+.body-sec img {
   display: block;
-  width: auto;
+  width: 1000px;
   height: auto;
+  padding-bottom:20px;
 }
 
 .body-sec2 img {
